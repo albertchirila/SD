@@ -1,0 +1,11 @@
+NUME: CHIRILA ALBERT
+GRUPA: 314CB
+
+
+MKDIR: Am folosit contori de parcurgere a sirurilor de caractere: i, j, k, k1. In cazul unui exemplu "mkdir /ana/are/mere" se face verificarea existentei directoarelor ana si ana/are. Daca exista o asfel de comanda, arborele va puncta catre radacina(root). Apoi fac parcurgerea sirului de caractere x(argumentul comenzii mkdir) si se face inserarea astfel: Daca se gaseste caracterul, se coboara in arbore. Altfel se insereaza elementul in arbore.
+
+CD: Daca am comanda "cd ..", am schimbat sirul de caractere y(directorul curent). Daca e diferit de "..", caut in arbore cuvantul x. Daca nu se gaseste in arbore, printez eroarea si returnez -1. Daca se gaseste, concatenez y si x.
+
+PWD: Daca nu s-a schimbat directorul(*ok==0), se afiseaza informatia din radacina. ALtfel, se afiseaza sirul de caractere y. (Este x in functie, dar apelez cu y)
+
+

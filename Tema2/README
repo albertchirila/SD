@@ -1,0 +1,20 @@
+NUME: CHIRILA ALBERT
+GRUPA: 314CB
+
+Add: Memoria sistemului de operare este reprezentata de coada "c". La fiecare apelare a functiei "add", se introduce in coada memoriei procesul cu informatiile acestuia. Am verificat inainte de fiecare adaugare daca procesul ar avea loc(daca nu se depaseste totalul de 3MB). Primul proces adaugat este trecut direct in starea runnig, fiind introdus in coada "cr, dar si in cozile "cp" si "cm", reprezentand coada de piduri, respectiv, coada de memorie. Acestea ma vor ajuta la aflarea pid-ului disponibil si a memoriei libere. De la al doilea proces adaugat, se verifica disponibilitatea pid-ului si memoriei si se adauga atat in coada memoriei "c", cat si in coada waiting "cw".
+
+Get: Se parcurge fiecare coada si se gaseste pidul procesului. Daca pidul nu a fost gasit se afiseaza mesajul "Process <PID> not found."
+
+Pop_stiva: Functia cauta pidul procesului. Se acceseaza stiva acestuia. Daca stiva e goala, nu se poate extrage nimic. Daca stiva nu este goala, se extrag primii 4 octeti din stiva. Mai precis, am extras varful stivei si am dealocat atat elementul, cat si informatia din acesta.
+
+Push_stiva: Functia cauta pidul procesului. Daca a fost gasit procesul, se aloca elementul ce urmeaza a fi introdus in stiva si se copiaza informatia(de tip int). Se acceseaza stiva acestuia si se face inserarea la inceput, actualizandu-se varful stivei.
+
+Print_stack: Functia cauta pidul procesului. Daca a fost gasit procesul, se acceseaza stiva acestuia. Mai intai am rasturnat stiva, pentru a putea face afisarea inversa(de la baza la varf). Dupa fiecare extragere din stiva rasturnata, am afisat informatia, si am introdus elementul intr-o stiva auxiliara si la urma am concatenat. Astfel am refacut stiva.
+
+Print_waiting: Am parcurs coada "cw" si am afisat informatiile necesare ale fiecarui proces.
+
+Print_finished:  Am parcurs coada "cf" si am afisat informatiile necesare ale fiecarui proces.
+
+Finish: Am parcurs coada "cr" si coada "cw" si am insumat timpii de executie ramasi.
+
+Run: Am facut doar cazul in care timpul de executie se imparte exact la cuanta de timp si am studiat cazurile par/impar.

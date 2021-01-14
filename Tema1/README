@@ -1,0 +1,10 @@
+/* NUME: CHIRILA ALBERT
+   GRUPA: 314CB  */
+
+	Programul adauga carduri in baza de date si efectueaza operatii asupra acestora. Pozitiile cardurilor se calculeaza in functie de suma cifrelor unui card si numarului maxim de carduri(nmc). Se citesc din fisierul "input.in" operatiile ce urmeaza a fi efectuate. La apelarea comenzii "show" se afiseaza informatiile despre un anumit card sau despre toate cardurile din baza de date.
+	La fiecare adaugare a unui card, se verifica daca acel card nu exista deja in baza de date(functia "Verificare"). Se pastreaza mereu capul de lista(L), pentru a putea fi realizate mai apoi parcurgeri ale bazei de date.
+	Orice operatie specifica clientului este mai apoi adaugata in istoricul cardului, rezultatul ei fiind "SUCCESS" sau "FAIL". Alocarile celulelor si a informatiilor se fac dinamic.
+	Alte variabile folosite:
+		- k1 - variabila care memoreaza stergerea unui card, care reseteaza numarul de inserari gresite(k2 si k3) la 0;
+		- k3 - variabila care memoreaza inserarea gresita a unui card;
+		- k4 - variabila care memoreaza schimbarea de pin, care schimba statusul cardului in "ACTIVE".
